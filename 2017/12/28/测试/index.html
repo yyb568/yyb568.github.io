@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.yybblog.cn">
-  <title>MySQL优化之三范式 | 尹义斌•Blog</title>
+  <title>测试 | 尹义斌•Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="MySQL">
+  <meta name="description" content="一个技术博客和生活琐碎博客">
+<meta name="keywords" content="测试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL优化之三范式">
-<meta property="og:url" content="http://www.yybblog.cn/2017/12/28/mysql优化三范式/index.html">
+<meta property="og:title" content="测试">
+<meta property="og:url" content="http://www.yybblog.cn/2017/12/28/测试/index.html">
 <meta property="og:site_name" content="尹义斌•Blog">
+<meta property="og:description" content="一个技术博客和生活琐碎博客">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://otbcgjn6c.bkt.clouddn.com/diary-29.jpg">
-<meta property="og:updated_time" content="2017-11-15T17:31:36.000Z">
+<meta property="og:updated_time" content="2017-12-28T13:33:58.949Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySQL优化之三范式">
-<meta name="twitter:image" content="http://otbcgjn6c.bkt.clouddn.com/diary-29.jpg">
+<meta name="twitter:title" content="测试">
+<meta name="twitter:description" content="一个技术博客和生活琐碎博客">
   
     <link rel="alternative" href="/atom.xml" title="尹义斌•Blog" type="application/atom+xml">
   
@@ -174,39 +175,27 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mysql优化三范式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-测试" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      MySQL优化之三范式
+      测试
     </h1>
   
 
         
-        <a href="/2017/12/28/mysql优化三范式/" class="archive-article-date">
-  	<time datetime="2017-12-28T12:57:42.106Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+        <a href="/2017/12/28/测试/" class="archive-article-date">
+  	<time datetime="2017-12-28T13:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://otbcgjn6c.bkt.clouddn.com/diary-29.jpg" width="400" alt="图片名称" align="center" style="border:1px solid  #F6F6F6"></p>
-<h3 id="常见的数据库优化的几种方法"><a href="#常见的数据库优化的几种方法" class="headerlink" title="常见的数据库优化的几种方法:"></a>常见的数据库优化的几种方法:</h3><p>1.数据表要设计合理，满足三范式（3NF）；<br>2.创建适当索引；<br>3.对sql语句进行优化，定位慢查询（explain）；<br>4.使用分表、分区技术；<br>5.读写分离；<br>6.创建适当的存储过程、函数、触发器；<br>7.对my.ini进行优化配置；<br>8.软硬件的升级。</p>
-<h3 id="三范式的方法"><a href="#三范式的方法" class="headerlink" title="三范式的方法"></a>三范式的方法</h3><h4 id="一范式（1NF）。"><a href="#一范式（1NF）。" class="headerlink" title="一范式（1NF）。"></a>一范式（1NF）。</h4><p>1.表的属性（列），不能再分。比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Id     name            sex        num           grade</div><div class="line">1      王某某          男        123456       80、90,75</div></pre></td></tr></table></figure></p>
-<p>上面的例子中grade（成绩）字段下面有三个分数，分别是语文、数学、英语，那他就应该单独建立一张grade表，如果grade字段只有一个值，比如总分，那它就是不可再分的。</p>
-<p>2.不能有重复的列。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Id    name           sex        num    num</div></pre></td></tr></table></figure>
-<p>重复的列无法添加数据。</p>
-<h4 id="二范式（2NF）。"><a href="#二范式（2NF）。" class="headerlink" title="二范式（2NF）。"></a>二范式（2NF）。</h4><p> 1.2NF就是指不能有完全相同的一条记录，可以通过设置主键解决，而且该主键为自增值。</p>
-<h4 id="三范式（3NF）。"><a href="#三范式（3NF）。" class="headerlink" title="三范式（3NF）。"></a>三范式（3NF）。</h4><p>1.如果列的值可以通过另建一张表关联起来，即同一个字段不能有过多重复的记录。比如:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Id      name          sex         num           class       academy</div><div class="line">1       王            男          123           A班         信息学院</div><div class="line">2       李            女          234           A班         信息学院</div><div class="line">3       罗            男          456           A班         信息学院</div><div class="line">4       张            男          879           A班         信息学院</div></pre></td></tr></table></figure>
-<p>改为：<br>Student表：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Id     name           sex         num           classid</div><div class="line">1       王            男          123             1</div></pre></td></tr></table></figure></p>
-<p>student表的班级信息可以通过外键从班级表中查询，减少了数据冗余和更新异常。</p>
-
+        
       
 
       
@@ -250,7 +239,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
         		</li>
       		
 		</ul>
@@ -306,7 +295,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNklEQVR42u3aS27DMAxFUe9/0+6kgwCFnPvIBKjE61GQ1LaOBqz4uS583S/X6zf817+fV89f/c0HLhkyZGzLuB8vspTVNysq+ZWvTYYMGXMYqwjGF5q+uLZly+9lyJAhAx/p+oc8GTJkyOgw0jSVh2nyFhkyZMioJZlpWpumxF/JxWXIkLEho3Nc+/bnr/Q3ZMiQsRXjDq+UyoN4bT2/98qQIeNoRqeFyY+JPFmtJb0yZMiYxkjDKB/qSotoz9vxJuDKkCHjIEa/fEaCZjqcwZsEMmTImMPgy+2EZnLQJNtxkX6mDBkyDmKQkJduRGf7eNqMym0yZMg4jlELnWnLs/PMNxsnQ4aMoxm1Kh3HB5W/RnlOhgwZMxm1paTjFPw5rf8eMmTI2JyRJrFp6Y3fm75dhgwZ0xjpAY6H0c6ARTB8JkOGjAGMfhOxNi5GgjK6V4YMGYcy+AGudhCstTbj5FmGDBlHM9LSfy281kZda+0EGTJknMogwxDkVNYp6/MBjngsTIYMGQMYPAjWfk1LeMsny5AhYwCjE3ZrrUqSJLcaAzJkyDiIwV/8HBbTY1+/YSBDhowJjDu80mMcH8JI7wr6GDJkyNic0T/qfWrwq1bCi2EyZMjYlkGCLAmLndDZD9MyZMiYwOBl+rSd0Bm8iFNZGTJkyMAwEpr7hTzUKZUhQ8ZIRpq4dop0QSNBhgwZAxi1JJa8IE1K+TZ9LBeXIUPGv2fw1LG2RL4IMhXSamrKkCFjP8YPJPSYToWZEgUAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABx0lEQVR42u3aQW7DMAwEwPz/0ynQW1HYXYoSnQKjU5AE9uhCiFy9XvF6f6/fn69+rX6zeeHi4ra579uVgK62UX3+/X9wcXHnuUnxSjZwtY3kCfcGXFzcz+R2cFf/wcXF/e/ce1zyfd5Q4eLifgI3b06S1yeHm+O9Gi4uboPbGZju+jw038XFxW2nEtXhZj5OfS8tXFzcGW4SmibjjGRoUt3kZZnDxcUd4eaFZu3KRT+UxcXFneQm8WcyFqle2sjL34/n4OLijnA78Wf+a7U1yke0uLi4J7j5KLPa5OThSuG9uLi4D3HzoDQvZ9UC90cajIuLe5i7dkGqekzpH6RwcXGf5a5tIOlNElB09MHFxR3hJsUlH4P2j0e4uLjPctdwu+KW6BoWLi7uOLd6iKkGKtWWqRyo4OLiHuBWL13tSnSrwQwuLu48tzMS7Y9iC6ELLi7uILfakORDkM41zWieiouLe4C7VpLyKCVpbDpxDi4u7jluXnTWAtRqDBPdJsPFxR3h5uPOXfRtxxdcXNxHuRtueRQ32SpkuLi4g9z8ulXSDlVbJlxc3Eluf0iavHJtFLI4FsHFxW1wO3FpJyxZG8Tg4uIe5n4ByP+VjK1k4jwAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
@@ -320,18 +309,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/12/28/json_decode和json_encode的使用方法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          json_decode和json_encode的使用方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/28/find()/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">find()的用法</div>
+    <a href="/2017/12/28/鼠标滑过变色/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">鼠标滑过，动态数据表格如何变色</div>
       <i class="icon-circle-right"></i>
     </a>
   
