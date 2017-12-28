@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yybblog.cn/"/>
-  <updated>2017-12-28T13:35:27.554Z</updated>
+  <updated>2017-12-28T13:44:52.707Z</updated>
   <id>http://www.yybblog.cn/</id>
   
   <author>
@@ -15,22 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>测试</title>
-    <link href="http://www.yybblog.cn/2017/12/29/%E6%B5%8B%E8%AF%95/"/>
-    <id>http://www.yybblog.cn/2017/12/29/测试/</id>
-    <published>2017-12-29T13:33:00.000Z</published>
-    <updated>2017-12-28T13:35:27.554Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="测试" scheme="http://www.yybblog.cn/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
   
   <entry>
     <title>Nginx的配置</title>
@@ -423,6 +407,26 @@
     
     
       <category term="七牛云" scheme="http://www.yybblog.cn/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新博客</title>
+    <link href="http://www.yybblog.cn/2017/07/17/%E4%BD%A0%E5%A5%BD/"/>
+    <id>http://www.yybblog.cn/2017/07/17/你好/</id>
+    <published>2017-07-17T01:28:16.000Z</published>
+    <updated>2017-11-15T17:31:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="为什么会将博客转移到GitHub上"><a href="#为什么会将博客转移到GitHub上" class="headerlink" title="为什么会将博客转移到GitHub上"></a>为什么会将博客转移到GitHub上</h3><ol><li>首先github是完全免费开放的</li><li>不需要你再去花额外金钱去购买云服务器</li><li>安装配置简单,网上教程一大片</li><li>模板很多,可以根据喜好选择不同模板</li></ol><h3 id="搭建自己的Hexo-GitHub-博客"><a href="#搭建自己的Hexo-GitHub-博客" class="headerlink" title="搭建自己的Hexo + GitHub 博客"></a>搭建自己的Hexo + GitHub 博客</h3><p>我好久之前就有一个自己的技术博客,由于前段时间很忙,忘了给腾讯云付费,就给我停服务了,可惜了我那些学习笔记和工作中的总结.索性我也不用了,但是有了这个以后就再也不怕给我停服务了.</p><blockquote><p>关于如何 搭建Hexo + GitHub 博客,可查看这个地址:</p></blockquote><p><a href="http://www.jianshu.com/p/9bbae1d105be" target="_blank" rel="external">简书:Hexo + GitHub 免费搭建搭建个人博客</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;为什么会将博客转移到GitHub上&quot;&gt;&lt;a href=&quot;#为什么会将博客转移到GitHub上&quot; class=&quot;headerlink&quot; title=&quot;为什么会将博客转移到GitHub上&quot;&gt;&lt;/a&gt;为什么会将博客转移到GitHub上&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://www.yybblog.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
