@@ -2,8 +2,7 @@
 title: Git常用命令
 date: 2017-12-29 22:10:14
 tags:
- -  
- - 博客
+ - GIT
 ---
 <img src="http://otbcgjn6c.bkt.clouddn.com/timgss.jpg"  width = "400" alt="图片名称" align=center style="border:1px solid  #F6F6F6"/>
 
