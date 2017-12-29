@@ -1,6 +1,6 @@
 ---
 title: Nginx的配置
-date: 2017-7-20 15:17:01
+date: 2017-11-15 15:17:01
 tags:
  - PHP
  - Nginx
