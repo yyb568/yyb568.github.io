@@ -204,8 +204,8 @@
   
   <entry>
     <title>Python爬虫爬取校花网图片</title>
-    <link href="http://www.yybblog.cn/2017/09/13/python%E7%88%AC%E8%99%AB/"/>
-    <id>http://www.yybblog.cn/2017/09/13/python爬虫/</id>
+    <link href="http://www.yybblog.cn/2017/09/13/python%E5%B0%8F%E8%8A%B1%E7%BD%91%E7%88%AC%E8%99%AB/"/>
+    <id>http://www.yybblog.cn/2017/09/13/python小花网爬虫/</id>
     <published>2017-09-13T09:20:43.000Z</published>
     <updated>2018-05-11T03:30:13.380Z</updated>
     
@@ -224,8 +224,8 @@
   
   <entry>
     <title>Python爬虫爬取校花网图片</title>
-    <link href="http://www.yybblog.cn/2017/09/13/python%E5%B0%8F%E8%8A%B1%E7%BD%91%E7%88%AC%E8%99%AB/"/>
-    <id>http://www.yybblog.cn/2017/09/13/python小花网爬虫/</id>
+    <link href="http://www.yybblog.cn/2017/09/13/python%E7%88%AC%E8%99%AB/"/>
+    <id>http://www.yybblog.cn/2017/09/13/python爬虫/</id>
     <published>2017-09-13T09:20:43.000Z</published>
     <updated>2018-05-11T03:30:13.380Z</updated>
     
@@ -407,22 +407,22 @@
   </entry>
   
   <entry>
-    <title>find()的用法</title>
-    <link href="http://www.yybblog.cn/2017/07/20/find()/"/>
-    <id>http://www.yybblog.cn/2017/07/20/find()/</id>
+    <title>stripos()的用法</title>
+    <link href="http://www.yybblog.cn/2017/07/20/stripos%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <id>http://www.yybblog.cn/2017/07/20/stripos的用法/</id>
     <published>2017-07-20T07:17:01.000Z</published>
-    <updated>2018-05-11T03:30:13.379Z</updated>
+    <updated>2018-05-11T03:30:13.381Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://otbcgjn6c.bkt.clouddn.com/dab590448925ab0dc729a38bbfc2599cafb3dbb2157db-5AQiSw_fw658.jpg" width="400" alt="图片名称" align="center" style="border:1px solid  #F6F6F6"></p><h3 id="find"><a href="#find" class="headerlink" title="find():"></a>find():</h3><font color="#F44336">find() 方法返回被选元素的后代元素,一直找到最后一个后台元素(也就是找到所有find(“xxx”)的元素).</font><p>例如我代码里面有篇文章,$soft[‘content’]代表文章内容(包括文字和图片):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;col-xs-12 mt3&quot; id=&quot;content_product&quot; &gt;</div><div class="line">&lt;?=$soft[&apos;content&apos;] ?&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p><p>在页面的上所显示内容:<br><img src="http://otbcgjn6c.bkt.clouddn.com/2017-07-25_145115.jpg" alt=""><br>以上内容里面的图片很大而且不规律.然后通过浏览器F12调试可以看到有<font color="#F44336">p</font>标签和<font color="#F44336">img</font>标签;这里的<font color="#F44336">img</font>图片是没有经过处理的所以图片是原比例展示出来的,在手机页面端是很难看的;<br><img src="http://otbcgjn6c.bkt.clouddn.com/2017-07-25_145536.jpg" alt=""></p><h3 id="利用jQ-find-方法解决此问题-也就是把内容里面的所有图片通过遍历时图片自适应"><a href="#利用jQ-find-方法解决此问题-也就是把内容里面的所有图片通过遍历时图片自适应" class="headerlink" title="利用jQ find()方法解决此问题;也就是把内容里面的所有图片通过遍历时图片自适应"></a>利用jQ find()方法解决此问题;也就是把内容里面的所有图片通过遍历时图片自适应</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//将图片自适应</div><div class="line">$(function()&#123;</div><div class="line">$(&quot;#content_product&quot;).find(&quot;img&quot;).each(function(i,j)&#123;</div><div class="line">$(this).attr(&quot;width&quot;, &quot;100%&quot;);</div><div class="line">&#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure><h3 id="现在再看页面显示效果"><a href="#现在再看页面显示效果" class="headerlink" title="现在再看页面显示效果"></a>现在再看页面显示效果</h3><p><img src="http://otbcgjn6c.bkt.clouddn.com/2017-07-25_144907.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>这个函数经常用到,并且能快速判断,某字符串是否在另一字符串中出现,常用在条件判断中;</p><h3 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h3><p>stripos(string,find)<br>参一:另一串字符<br>参二:要查找的字符</p><p>例子:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$content = &apos;Hello World MyBlog&apos;;</div><div class="line">$appear = stripos($content,&apos;my&apos;);</div><div class="line">print_r($appear);</div></pre></td></tr></table></figure></p><p>结果:<br><code>12</code></p><p>说明: 返回字符串在另一字符串中第一次出现的位置，如果没有找到字符串则返回 FALSE。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$content = &apos;Hello World MyBlog&apos;;</div><div class="line">$appear = stripos($content,&apos;kk&apos;);</div><div class="line">if (stripos($content,&apos;kk&apos;))&#123;</div><div class="line">echo &apos;存在&apos;;</div><div class="line">&#125;else&#123;</div><div class="line">echo &apos;不存在&apos;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">if (stripos($content,&apos;lo&apos;))&#123;</div><div class="line">echo &apos;存在&apos;;</div><div class="line">&#125;else&#123;</div><div class="line">echo &apos;不存在&apos;;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>结果分别是:<br><code>不存在</code><br><code>存在</code></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://otbcgjn6c.bkt.clouddn.com/dab590448925ab0dc729a38bbfc2599cafb3dbb2157db-5AQiSw_fw658.jpg&quot; width=&quot;400&quot; alt=&quot;图片名称&quot; align=&quot;center&quot; style=&quot;border:1px solid  #F6F6F6&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;这个函数经常用到,并且能快速判断,某字符串是否在另一字符串中出现,常用在条件判断中;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="jQery" scheme="http://www.yybblog.cn/tags/jQery/"/>
+      <category term="PHP" scheme="http://www.yybblog.cn/tags/PHP/"/>
     
   </entry>
   
